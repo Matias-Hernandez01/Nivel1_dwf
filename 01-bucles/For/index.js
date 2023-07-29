@@ -18,3 +18,7 @@ const animales = [
 for (let i = 0; i < animales.length; i++) {
   console.log(animales[i].nombre, animales[i].edad);
 }
+
+for (let objeto in animales) {
+  console.log(animales[objeto]);
+}
