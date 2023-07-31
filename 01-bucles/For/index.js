@@ -16,9 +16,20 @@ const animales = [
 
 //*Ejercicio numero 1 resuelto
 for (let i = 0; i < animales.length; i++) {
-  console.log(animales[i].nombre, animales[i].edad);
+  // console.log(animales[i].nombre, animales[i].edad);
 }
 
 for (let objeto in animales) {
-  console.log(animales[objeto]);
+  // console.log(animales[objeto]);
+}
+let boolean = true;
+
+while (boolean) {
+  for (let i = 0; i < animales.length; i++) {
+    let element = animales[i];
+    console.log(element);
+    if (element.tipo === 'acuático') {
+      boolean = false;
+    }
+  }
 }
