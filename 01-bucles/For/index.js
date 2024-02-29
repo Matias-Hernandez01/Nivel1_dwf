@@ -27,9 +27,11 @@ let boolean = true;
 while (boolean) {
   for (let i = 0; i < animales.length; i++) {
     let element = animales[i];
-    console.log(element);
     if (element.tipo === 'acuático') {
       boolean = false;
     }
   }
 }
+
+const argumento = process.argv[0];
+console.log(argumento);
